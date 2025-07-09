@@ -29,3 +29,11 @@ All transformations were done using Pandas inside Fabric's notebook environment.
 3. Output results for downstream Power BI analysis (not included here)
 
 ## 📸 Screenshots
+
+To help illustrate key functionality and visuals, this project includes a `screenshots/` directory with example images of:
+
+- Data preview displays (e.g., combined DataFrame view)
+- Data cleaning steps in action
+- Notebook UI and output snippets
+
+You can view the screenshots directly in the `screenshots/` subfolder on GitHub or browse them using your local file explorer.
