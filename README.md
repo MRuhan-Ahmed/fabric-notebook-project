@@ -1,39 +1,50 @@
 # Microsoft Fabric: Excel Data Normalization with Notebooks
 
-This project uses Microsoft Fabric's built-in notebooks to transform and normalize raw Excel sales data into structured tables for analysis and reporting.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Portfolio-blue)](https://mruhan-ahmed.github.io/Portfolio/#projects)
+
+This project leverages **Microsoft Fabric Notebooks** and **Pandas** to ingest, clean, and normalize raw Excel sales data into structured tables—ready for downstream analysis and reporting.
 
 ## 🧰 Tools Used
 
-- Microsoft Fabric Notebooks
-- Python (Pandas)
-- Excel (raw input files)
+- **Microsoft Fabric Notebooks** (Notebook environment)  
+- **Python** (Pandas) for data transformations  
+- **Excel** (source data files)
 
 ## 📁 Project Overview
 
-The notebook combines and cleans three monthly Excel order files (Jan–Mar) and a separate sales summary sheet. The result is a set of normalized tables:
+Three months of Excel order data (January–March) plus a sales summary sheet are:
 
-- `bookings`
-- `customers`
-- `items`
-- `sales`
+1. Loaded into Fabric’s notebook  
+2. Merged and cleaned (column renaming, null handling, type conversions)  
+3. Split into four normalized tables:
+   - `bookings`
+   - `customers`
+   - `items`
+   - `sales`
 
-All transformations were done using Pandas inside Fabric's notebook environment.
+These tables power interactive dashboards (e.g., Power BI) for business insights.
 
 ## 🧪 Workflow Summary
 
-1. Uploaded Excel files to Fabric workspace
-2. Used Fabric Notebook to:
-   - Load and merge monthly orders
-   - Clean and standardize columns
-   - Normalize tables using joins and groupings
-3. Output results for downstream Power BI analysis (not included here)
+1. **Upload** raw Excel files to your Fabric workspace.  
+2. **Load & merge** monthly orders using Pandas.  
+3. **Clean & standardize** columns (rename, drop, fill nulls, convert types).  
+4. **Normalize** into separate tables via joins and grouping.  
+5. **Export** clean tables for visualization and reporting.
 
 ## 📸 Screenshots
 
-To help illustrate key functionality and visuals, this project includes a `screenshots/` directory with example images of:
+Key notebook steps and outputs are in the `screenshots/` directory. You can also browse them on the live site under the **Projects** section:
 
-- Data preview displays (e.g., combined DataFrame view)
-- Data cleaning steps in action
-- Notebook UI and output snippets
+🔗 [View the Fabric Gallery on my portfolio](https://mruhan-ahmed.github.io/Portfolio/#projects)
 
-You can view the screenshots directly in the `screenshots/` subfolder on GitHub or browse them using your local file explorer.
+## 🚀 Next Steps
+
+- Connect these normalized tables into a **Power BI** or **Tableau** dashboard  
+- Extend the notebook to handle new monthly data feeds automatically  
+- Add unit tests for data validation  
+
+---
+
+> **Tip:** If you haven’t already, check out my full portfolio for more data projects and interactive galleries:  
+> 🔗 https://mruhan-ahmed.github.io/Portfolio/
